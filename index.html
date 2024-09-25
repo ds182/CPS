@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Page - Cursos de Inglés</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+        }
+        .header-container {
+            margin-top: 50px;
+            width: 100%;
+            max-width: 100%;
+        }
+        header {
+            background-image: url('https://i.ibb.co/cXqxgT8/CLASE-MUESTRA-1.png');
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+            border-radius: 10px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+            border-radius: 10px;
+        }
+        header h1 {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .course, .right-container {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            margin: 20px;
+            padding: 20px;
+            flex: 1;
+            max-width: 100%;
+        }
+        .course img, .right-container img {
+            max-width: 100%;
+            width: 100%;
+            border-radius: 10px;
+            height: auto;
+        }
+        .right-container img.main-image {
+            margin-bottom: 20px;
+        }
+        .small-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .small-box {
+            flex: 1;
+            text-align: center;
+        }
+        .small-box img {
+            width: 100%;
+            max-width: 100px;
+            border-radius: 10px;
+        }
+        .highlight-text {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #2b2b2b;
+            border-radius: 10px;
+            color: white;
+            text-align: left;
+            font-size: 1.1em;
+            line-height: 1.5em;
+        }
+        .highlight-text h3 {
+            font-size: 1.8em;
+            color: #f305cb;
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+        .button {
+            background-color: #f305cb;
+            border: 2px solid #e0078d;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 20px 0;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .button:hover {
+            background-color: #35a13a;
+        }
+        .button.selected {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+        .right-container h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .icon-list {
+            list-style: none;
+            padding: 0;
+        }
+        .icon-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .icon-list li i {
+            margin-right: 10px;
+            font-size: 1.5em;
+            color: #35a13a;
+        }
+        @media screen and (max-width: 768px) {
+            header {
+                background-size: contain; 
+                background-attachment: scroll;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            .course, .right-container {
+                max-width: 100%;
+                margin: 20px auto;
+            }
+            .small-box img {
+                max-width: 80px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .small-box img {
+                max-width: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <header>
+            <h1>"CURSO - GRATUITO"</h1>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="course">
+            <img src="https://i.ibb.co/QHwtQLJ/GRAMAR-25.png" alt="GRAMAR-25">
+            <div class="highlight-text">
+                <h2>¡Ventajas!</h2>
+                <ul>
+                    <li><strong>Canciones</strong></li>
+                    <li><strong>Videos</strong></li>
+                    <li><strong>Apuntes</strong></li>
+                    <li><strong>Juegos</strong></li>
+                    <li><strong>Test final</strong></li>
+                </ul>
+                <p>¡Haz clic en el botón y empieza a mejorar tu inglés ahora mismo!</p>
+            </div>
+        </div>
+
+        <div class="right-container">
+            <h3>"Gratis"</h3>
+            <button class="button" onclick="window.location.href='https://ds182.github.io/menucps/'">Da clic...</button>
+
+            <img src="https://i.ibb.co/ngjMd9w/Dise-o-sin-t-tulo-6.png" alt="Dise-o-sin-t-tulo-6" class="main-image">
+            <div class="small-container">
+                <div class="small-box">
+                    <img src="https://i.ibb.co/WkH51Xq/1.png" alt="Imagen 1">
+                </div>
+                <div class="small-box">
+                    <img src="https://i.ibb.co/hmqMRXn/2.png" alt="Imagen 2">
+                </div>
+                <div class="small-box">
+                    <img src="https://i.ibb.co/VLp3LC3/3.png" alt="Imagen 3">
+                </div>
+            </div>
+
+            <p>Este curso incluye:</p>
+            <ul class="icon-list">
+                <li><i class="fas fa-mobile-alt"></i>Acceso desde cualquier dispositivo</li>
+                <li><i class="fas fa-certificate"></i>Certificado al culminar</li>
+                <li><i class="fas fa-file-download"></i>Artículos y descargables</li>
+                <li><i class="fas fa-edit"></i>Exámenes</li>
+                <li><i class="fas fa-play-circle"></i>Contenido dinámico</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Derechos reservados.</p>
+    </div>
+
+    <script>
+        function toggleButton(button) {
+            button.classList.toggle('selected');
+        }
+    </script>
+
+</body>
+</html>
